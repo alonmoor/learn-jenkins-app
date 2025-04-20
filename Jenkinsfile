@@ -1,9 +1,5 @@
 pipeline {
 
-node {
-    echo "JAVA_HOME: ${env.JAVA_HOME}"
-    sh "${env.JAVA_HOME}/bin/java -version"
-}
 
     
     agent {label 'vjenslave'}
