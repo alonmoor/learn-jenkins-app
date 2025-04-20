@@ -2,6 +2,11 @@ pipeline {
     agent {label 'jenslave-new'}
 
     stages {
+        stage('Hello2') {
+          steps{
+              echo "Hello"
+          }   
+        }  
         stage('Hello') {
             agent{
                 docker{
