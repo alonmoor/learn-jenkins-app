@@ -1,5 +1,5 @@
 pipeline {
-    agent any//{label 'jenslave-new'}
+    agent {label 'jenslave-new'}
 
     stages {
         stage('Hello') {
