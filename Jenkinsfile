@@ -1,6 +1,13 @@
 pipeline {
-    agent {label 'vjenslave'}
 
+node {
+    echo "JAVA_HOME: ${env.JAVA_HOME}"
+    sh "${env.JAVA_HOME}/bin/java -version"
+}
+
+    
+    agent {label 'vjenslave'}
+ 
     stages {
         stage('Hello2') {
           steps{
