@@ -50,4 +50,17 @@
     "ancestorSeparator": " › ",
     "usePathForSuiteName": "true"
   }
+    "jest": {
+    "testResultsProcessor": "jest-junit",
+    "reporters": [
+      "default",
+      [
+        "jest-junit",
+        {
+          "outputDirectory": "jest-results",
+          "outputName": "junit.xml"
+        }
+      ]
+    ]
+  }
 }
