@@ -106,6 +106,7 @@ pipeline {
                     sleep 10
 
                     npx playwright test
+                    npm install --save-dev jest-junit
 
                 '''
 
@@ -118,7 +119,7 @@ pipeline {
     post {
 
         always {
-
+             
             junit 'jest-results/junit.xml'
 
         }
