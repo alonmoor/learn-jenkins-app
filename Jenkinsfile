@@ -7,6 +7,11 @@ pipeline {
  
  
     stages {
+       stage('Clean Workspace') {
+            steps {
+                deleteDir() // Deletes all files in the workspace
+            }
+        }
 
         /*
  
