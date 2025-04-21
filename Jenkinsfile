@@ -4,9 +4,7 @@ pipeline {
     
     agent {label 'vjenslave'}
  
-   pipeline {
-
-    agent any
+ 
  
     stages {
 
